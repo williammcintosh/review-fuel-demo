@@ -1,0 +1,19 @@
+/* Small spice, still on-brand */
+
+select#flavor{
+  border-color:rgba(166,223,161,.9);
+  box-shadow:0 4px 10px rgba(15,23,32,.05);
+}
+
+.output{
+  border-color:rgba(166,223,161,.65);
+}
+
+.card.demo-card{
+  border-color:rgba(166,223,161,.55);
+}
+
+.badge{
+  background:linear-gradient(180deg, #0f1720, #1a2531);
+}
+

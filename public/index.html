@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ReviewFuel Demo</title>
+
+    <link rel="icon" href="/reviewfuelfav.ico">
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="/fun.css">
+  </head>
+
+  <body>
+    <div class="wrap">
+
+      <header class="section">
+        <img src="/images/review-fuel-logo.png" alt="Review Fuel" class="logo">
+        <div class="hero-stack">
+          <h1>Send a demo review text</h1>
+          <p class="lead">Fill anything you want. Leave it alone to use the demo defaults.</p>
+          <p class="hint">Type a dash to treat a field as blank.</p>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="form-card demo-card">
+          <form class="demo-form" onsubmit="return false">
+
+            <div class="row">
+              <div>
+                <label for="customerName">Customer name <span class="req-star">*</span></label>
+                <input id="customerName" placeholder="Jane" data-default="Jane" type="text">
+              </div>
+
+              <div>
+                <label for="repName">Your name</label>
+                <input id="repName" placeholder="Will" data-default="Will" type="text">
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label for="companyName">Business name <span class="req-star">*</span></label>
+                <input id="companyName" placeholder="Health For Life" data-default="Health For Life" type="text">
+                <div class="hint req-note">Company name and phone number required</div>
+              </div>
+
+              <div>
+                <label for="phone">Customer phone <span class="req-star">*</span></label>
+                <input id="phone" placeholder="021 000 0000" data-default="021 000 0000" type="tel">
+              </div>
+            </div>
+
+            <div>
+              <label for="items">What was sold or done</label>
+              
+                <input id="items" placeholder="magnesium" data-default="magnesium" type="text">
+            </div>
+
+            <div class="row">
+              <div>
+                <label for="flavor">Message tone</label>
+                <select id="flavor">
+                  <option value="">Default</option>
+                  <option>Professional</option>
+                  <option>Friendly</option>
+                  <option>Fun</option>
+                  <option>Calm and reassuring</option>
+                  <option>Kiwi casual</option>
+                  <option>No-nonsense</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="demoPass">Demo passcode <span class="req-star">*</span></label>
+                <input id="demoPass" type="password" placeholder="Required">
+              </div>
+            </div>
+
+            <div class="row">
+              <button id="sendBtn">Send demo text</button>
+              <span class="pill">SMS length safe</span>
+            </div>
+
+            <div class="form-footer">
+              <div class="footer-line"><span class="req-star">*</span> means required and cannot be blank</div>
+              <div class="footer-line">A dash means treat this field as blank</div>
+            </div>
+
+            <label class="output-label" for="out">Output</label>
+            <div id="out" class="output">Hi Jane, it's Will from Health For Life. If you loved the magnesium, could you take a moment to leave us a Google review? It really helps us out. Thanks! https://bit.ly/4jcuCf0 Reply STOP to opt out</div>
+
+
+          </form>
+        </div>
+      </section>
+
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
+
