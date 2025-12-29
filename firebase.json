@@ -15,17 +15,17 @@
   ],
   "hosting": {
     "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
-      {
-        "source": "/sendDemo",
-        "function": "sendDemo"
-      }
+      { "source": "/sendDemo", "function": "sendDemo" },
+      { "source": "/generateDemo", "function": "generateDemo" },
+      { "source": "/sendDemoSms", "function": "sendDemoSms" }
     ]
+  },
+  "emulators": {
+    "firestore": { "port": 8081 },
+    "hosting": { "port": 5050 },
+    "functions": { "port": 5051 },
+    "ui": { "port": 4001 }
   }
 }
-
